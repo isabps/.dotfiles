@@ -54,6 +54,9 @@ bindsym $mod+t exec terminator
 # start web-browser
 bindsym $mod+f exec firefox
 
+# start Intellij-community (Java)
+bindsym $mod+j exec "~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh"
+
 # Bloquear tela
 bindsym $mod+Shift+l exec i3lock
 
@@ -83,7 +86,7 @@ bindsym $mod+Right focus right
 # move focused window
 #bindsym $mod+Shift+j move left
 #bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+l move uP
 #bindsym $mod+Shift+ccedilla move right
 
 # alternatively, you can use the cursor keys:

@@ -10,6 +10,7 @@ up ()
 }
 
 alias intellij='~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh'
+#/opt/idea/bin/idea.sh
 
 alias c='clear'
 alias ll='ls -lh --color=auto'

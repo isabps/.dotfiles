@@ -56,6 +56,7 @@ bindsym $mod+f exec firefox
 
 # start Intellij-community (Java)
 bindsym $mod+j exec "~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh"
+#/opt/idea/bin/idea.sh
 
 # Bloquear tela
 bindsym $mod+Shift+l exec i3lock

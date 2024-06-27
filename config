@@ -59,7 +59,7 @@ bindsym $mod+j exec "~/.local/share/JetBrains/Toolbox/apps/intellij-idea-communi
 #/opt/idea/bin/idea.sh
 
 # Bloquear tela
-bindsym $mod+Shift+l exec i3lock
+bindsym $mod+Escape exec i3lock
 
 # kill focused window
 bindsym $mod+F4 kill

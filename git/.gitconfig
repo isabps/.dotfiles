@@ -1,0 +1,37 @@
+[user]
+	name = Isaias Silva
+	email = 108680376+Isaiaspereiraes@users.noreply.github.com
+
+[github]
+  	user = isaiaspereiraes
+
+[init]
+	defaultBranch = main
+
+[color]
+  	ui = true
+
+[core]
+	editor = nvim --wait
+
+[format]
+  	pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(bold yellow)%GK%Creset
+	graph = true
+
+[alias]
+	s = status
+
+	co = checkout
+	cob = checkout -b
+	
+	del = branch -D
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	
+	save = !git add -A && git commit -m 'chore: commit save point
+	
+	undo = reset HEAD~1 --mixed
+	res = !git reset --hard
+	
+	done = !git push origin HEAD
+	
+	lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30

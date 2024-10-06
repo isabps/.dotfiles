@@ -19,7 +19,10 @@
 	graph = true
 
 [alias]
-	s = status
+    s = status
+
+    c = commit -m
+    ca = commit -am
 
 	co = checkout
 	cob = checkout -b

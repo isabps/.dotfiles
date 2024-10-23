@@ -1,4 +1,4 @@
-#functions
+# functions
 mkcd ()
 {
   mkdir -p -- "$1" && cd -P -- "$1"
@@ -9,8 +9,18 @@ up ()
     sudo apt update && sudo apt upgrade
 }
 
+docker-post-install ()
+{
+    sudo groupadd docker && sudo usermod -aG docker $USER && newgrp docker
+}
+
+docker-hello ()
+{
+    docker run --name hello hello-world && docker rm hello && docker rmi hello-world:latest
+}
+
 alias intellij='~/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh'
-#/opt/idea/bin/idea.sh
+# /opt/idea/bin/idea.sh
 
 alias c='clear'
 alias ll='ls -lh --color=auto'
@@ -22,14 +32,16 @@ alias myip='curl ipinfo.io/ip'
 alias show='sudo apt show'
 alias search='sudo apt search'
 alias reboot='sudo reboot'
-alias shutdown='shutdown now'
+alias shutdown='sudo shutdown now'
 alias snvim='sudo nvim'
+# docker
+alias docker-post='newgrp docker'
 
 # Data, Dia e Hora (Ou um, ou os três).
 alias date='date +" %t %y/%m/%d %n %t Week:%U/53 %n %t Day:%j/364 %n %t %A %t %T"'
-#alias data='date +" %t %y/%m/%d %n %t Week:%U/53"'
-#alias time='date +" %t %A %t %T"'
-#alias day='date +" %t %A %t %j/364"'
+# alias data='date +" %t %y/%m/%d %n %t Week:%U/53"'
+# alias time='date +" %t %A %t %T"'
+# alias day='date +" %t %A %t %j/364"'
 
 # Python venv - Virtual Enviroment
 alias py_venv='python3 -m venv ./venv'

@@ -22,7 +22,7 @@
     s = status
 
     cm = commit -m
-    cam = commit -am
+    cma = commit -am
 
     # co = checkout
 	cob = checkout -b
